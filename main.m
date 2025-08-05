@@ -7,13 +7,13 @@ close all; clear; clc
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Parameters
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-architecture = 32;                 % antennas
+architecture = 16;                 % antennas
 frequency = 3e9;                   % 3 GHz
 lambda = (3e8) / frequency;        % wave-length
 delta = lambda/2;                  % antenna spacing
 snapshots = 100;                   % number of samples
 power = 0.1;                       % transmission power (w)
-noisepowerdBm = -50;               % noise power in dBm
+noisepowerdBm = -60;               % noise power in dBm
 AoA = [-53 -12 48 55];             % aoa (degrees)
 d = [4 10 6 12];                   % relative distances (m)
 source = length(AoA);              % number of sources
@@ -42,7 +42,7 @@ for ii = 1:length(architecture)
     surf(theta, d_range, 10 * log10(Pmusic.'), ...
         'EdgeColor', 'none');
     
-    colormap parula;
+    colormap jet;
     shading interp;
     view(0,90);
     axis tight;
@@ -54,7 +54,7 @@ for ii = 1:length(architecture)
         max(10 * log10(Pmusic(:)))]);
 
     z_offset = max(10 * log10(Pmusic(:))) + 1;
-    plot3(AoA, d, z_offset * ones(size(AoA)), 'ko', ...
+    plot3(AoA, d, z_offset * ones(size(AoA)), 'ro', ...
         'MarkerSize', 4, 'LineWidth', 1);
     hold off;
 
