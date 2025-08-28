@@ -1,14 +1,14 @@
 # MUSIC-2D-NearField
 
-This repository implements a 2D source localization method using the classical **MUSIC (Multiple Signal Classification)** algorithm under **near-field** conditions. A **Uniform Linear Array (ULA)** is used, and the steering vector is modeled via a **second-order Taylor approximation** to account for wavefront curvature, enabling accurate estimation of both **Angle of Arrival (AoA)** and **range**.
+This repository implements a 2D source localization method using the classical MUSIC (Multiple Signal Classification) algorithm under near-field conditions. A Uniform Linear Array (ULA) is used, and the steering vector is modeled via a second-order Taylor approximation to account for wavefront curvature, enabling accurate estimation of both Angle of Arrival and range.
 
 ## 📌 Features
 
-- **Antenna Array:** Uniform Linear Array (ULA)
-- **Localization:** 2D (AoA + Range) in near-field
-- **Signal Model:** Free-space, Line-of-Sight (LoS)
-- **Wavefront Modeling:** Taylor expansion (2nd order)
-- **Output:** MUSIC pseudo-spectrum over angle and range grid
+- Antenna Array: Uniform Linear Array (ULA)
+- Localization: 2D (AoA + Range) in near-field
+- Signal Model: Free-space, Line-of-Sight (LoS)
+- Wavefront Modeling: Taylor expansion (2nd order)
+- Output: MUSIC pseudo-spectrum over angle and range grid
 
 ## 📌 File Description
 
