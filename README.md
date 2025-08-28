@@ -10,7 +10,7 @@ This repository implements a 2D source localization method using the classical *
 - **Wavefront Modeling:** Taylor expansion (2nd order)
 - **Output:** MUSIC pseudo-spectrum over angle and range grid
 
-## 📁 File Description
+## 📌 File Description
 
 | File               | Description                                         |
 |--------------------|-----------------------------------------------------|
@@ -22,7 +22,7 @@ This repository implements a 2D source localization method using the classical *
 | `pseudospectrum.pdf` | Example output of the MUSIC pseudo-spectrum     |
 | `README.md`       | This documentation                                   |
 
-## 📊 Visualization
+## 📌 Visualization
 
 Below is an example of the MUSIC pseudo-spectrum for a 2D scenario:
 
@@ -31,19 +31,7 @@ Below is an example of the MUSIC pseudo-spectrum for a 2D scenario:
 </p>
 
 The peaks in the spectrum correspond to the estimated positions (AoA, distance) of the sources.
-
-## ⚙️ Requirements
-
-- MATLAB R2021a or newer
-- No external toolbox required
-
-## 🚀 How to Run
-
-1. Open `main.m` in MATLAB.
-2. Run the script to generate signals, compute the pseudospectrum, and visualize the results.
-3. Adjust number of sources, SNR, or angular grid as needed in `main.m`.
-
-## 🧠 Notes
+## 📌 Notes
 
 - The number of sources is estimated using the Akaike Information Criterion (AIC).
 - Near-field effects are captured via second-order phase modeling.
